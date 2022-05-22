@@ -1,3 +1,7 @@
+<!-- Delaunay-Flipping Implementation -->
+<!-- Ron Porath, 2022 -->
+<!-- License: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) -->
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -171,7 +175,7 @@
 
             // Function to calculate the mean point for a circle given by three points on this circle
             // The calculation uses a system of 3x3 linear equations, which is solved by means of cramer's rule
-            // Adapted from: avanitrachhadiya2155 (https://www.geeksforgeeks.org/system-linear-equations-three-variables-using-cramers-rule/)
+            // Adapted from: avanitrachhadiya2155 via https://www.geeksforgeeks.org/system-linear-equations-three-variables-using-cramers-rule/
             function MeanPoint(p1x, p1y, p2x, p2y, p3x, p3y) {
                 // Setup the system of linear equations
                 let coeff = [
@@ -194,7 +198,7 @@
             }
 
             // Function to find the determinant of a matrix given by the coefficients of the linear equations
-            // Adapted from: avanitrachhadiya2155 (https://www.geeksforgeeks.org/system-linear-equations-three-variables-using-cramers-rule/)
+            // Adapted from: avanitrachhadiya2155 via https://www.geeksforgeeks.org/system-linear-equations-three-variables-using-cramers-rule/
             function DeterminantOfMatrix(mat) {
                 let ans;
                 ans =
@@ -207,7 +211,7 @@
             }
 
             // Function to find the solution of a system of 3x3 linear equations using cramer's rule
-            // Adapted from: avanitrachhadiya2155 (https://www.geeksforgeeks.org/system-linear-equations-three-variables-using-cramers-rule/)
+            // Adapted from: avanitrachhadiya2155 via https://www.geeksforgeeks.org/system-linear-equations-three-variables-using-cramers-rule/
             function FindSolutionToLinEquSystem(coeff) {
                 // Matrix d using coeff as given in cramer's rule
                 let d = [
